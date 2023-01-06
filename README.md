@@ -4,5 +4,5 @@ Minha primeira imersão no 7-days-of-code da alura, no curso de Formação Inici
 
 <h2 align=center> Primeiro dia 06/01/23 <h2>
 Hoje o desafio foi corrigir esse código
-[Código para corrigir](docs/CONTRIBUTING.md)
+[Código para corrigir](docs/codigoerrado.js)
 
