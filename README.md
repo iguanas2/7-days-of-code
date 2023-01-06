@@ -81,7 +81,7 @@ if (numeroDez == stringDez) {
 }
 ```
 **<p>Assim, quando eu executo o código mostra:</p>**
-```js
+```
 As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes
 As variáveis numeroTrinta e stringTrinta tem o mesmo, mas tipos diferentes
 As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes
