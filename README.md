@@ -1,2 +1,8 @@
-<h1 align=center>**7-days-of-code**</h1>
-Minha primeira imersão no 7-days-of-code da alura, no curso de Formação Iniciante em Programação
+**<h1 align=center> :ledger: 7-days-of-code</h1>**
+Minha primeira imersão no 7-days-of-code da alura, no curso de Formação Iniciante em Programação.
+
+
+<h2 align=center> Primeiro dia 06/01/23 <h2>
+Hoje o desafio foi corrigir esse código
+[Código para corrigir](docs/CONTRIBUTING.md)
+
