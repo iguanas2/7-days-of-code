@@ -32,7 +32,7 @@ if (COMPARAR O numeroDez e a stringDez) {
   console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')
 }
 ```
-**<p>Para fazer a correção eu removi o "COMPARAR O" dos ifs</p>**
+**<p>Para fazer a correção eu primeiro removi o "COMPARAR O" dos ifs</p>**
 ```js
 if (numeroUm e a stringUm) {
   console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')
