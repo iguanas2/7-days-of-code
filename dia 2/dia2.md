@@ -2,3 +2,5 @@
 
 **O desafio de hoje foi fazer três perguntas pro usuário e armazenar a resposta**
 <p>(bonus, fazer pergunta com resposta sim ou não)</p>
+
+<p textalign= center> </p>
