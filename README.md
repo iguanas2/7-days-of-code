@@ -188,3 +188,31 @@ if (numeroDez == stringDez) {
     }
     </script>
 ~~~
+<h2 align=center> Terceiro dia dia 09/01/23 </h2>
+**O desafio de hoje foi fazer perguntas pro usuário e mudar as perguntas baseado nas respostas**
+<p>Comecei fazendo as variáveis e perguntas do caminho de front-end</p>
+~~~js
+let carreira = prompt("Você vai seguir qual carreira na programação? front-end ou back-end?");
+if (carreira == 'frontend' || carreira == 'FrontEnd'|| carreira == 'front-end' || carreira == 'Front-end'|| carreira == 'front end' || carreira == 'Front end'){
+    let programaf = prompt("Você quer aprender React ou Vue?");
+    let profundidadef = prompt("Você quer seguir se especializando em front-end ou seguir se desenvolvendo para se tornar Full Stack?");
+}
+~~~
+<p>Depois adicionei as variáveis do caminho de back-end</p>
+~~~js
+if (carreira == 'backend' || carreira == 'back-end' || carreira == 'back end'){
+    let programab = prompt("Você quer aprender C# ou Java?");
+    let profundidadeb = prompt("Você quer seguir se especializando em back-end ou seguir se desenvolvendo para se tornar Full Stack?");
+}
+~~~
+<p>E por final coloquei o loop de tecnologias</p>
+~~~js
+let tecnologias = prompt("Quais tecnologias você gostaria de se especializar ou de conhecer?");
+    let simNao = (confirm("Deseja aprender mais alguma tecnologia?"));
+    while (simNao == true){
+        let tecnologias = prompt("Cite outra tecnologia");
+        let simNao2 = (confirm("Deseja aprender mais alguma tecnologia?"))
+        if (simNao2 == false)
+            { break; }
+    }
+~~~
