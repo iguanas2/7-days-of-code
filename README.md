@@ -134,7 +134,7 @@ if (numeroDez == stringDez) {
 </html>
 ~~~
 
-<p>Depois abri a chave de script dentro do html, porquê o codigo não é grande o suficiente para necessitar de um arquivo próprio</p>
+**<p>Depois abri a chave de script dentro do html, porquê o codigo não é grande o suficiente para necessitar de um arquivo próprio</p>**
 
 ~~~html
 <!DOCTYPE html>
@@ -153,7 +153,7 @@ if (numeroDez == stringDez) {
 </html>
 ~~~
 
-<p>Após isso adicionei as variáveis de nome, anos e linguagem com o alert da resposta</p>
+**<p>Após isso adicionei as variáveis de nome, anos e linguagem com o alert da resposta</p>**
 
 ~~~html
     <script>
@@ -165,7 +165,7 @@ if (numeroDez == stringDez) {
     </script>
 ~~~
 
-<p>Nesse ponto o codigo já estava funcional, porém decidi adicionar o desafio extra, então o codigo ficou assim.</p>
+**<p>Nesse ponto o codigo já estava funcional, porém decidi adicionar o desafio extra, então o codigo ficou assim.</p>**
 
 ~~~html
     <script>
@@ -188,25 +188,33 @@ if (numeroDez == stringDez) {
     }
     </script>
 ~~~
-<h2 align=center> Terceiro dia dia 09/01/23 </h2>
+
+<h2 align=center> Terceiro dia 09/01/23 </h2>
+
 **O desafio de hoje foi fazer perguntas pro usuário e mudar as perguntas baseado nas respostas**
-<p>Comecei fazendo as variáveis e perguntas do caminho de front-end</p>
-~~~js
+
+**<p>Comecei fazendo as variáveis e perguntas do caminho de front-end</p>**
+
+```js
 let carreira = prompt("Você vai seguir qual carreira na programação? front-end ou back-end?");
 if (carreira == 'frontend' || carreira == 'FrontEnd'|| carreira == 'front-end' || carreira == 'Front-end'|| carreira == 'front end' || carreira == 'Front end'){
     let programaf = prompt("Você quer aprender React ou Vue?");
     let profundidadef = prompt("Você quer seguir se especializando em front-end ou seguir se desenvolvendo para se tornar Full Stack?");
 }
-~~~
-<p>Depois adicionei as variáveis do caminho de back-end</p>
-~~~js
+```
+
+**<p>Depois adicionei as variáveis do caminho de back-end</p>**
+
+```js
 if (carreira == 'backend' || carreira == 'back-end' || carreira == 'back end'){
     let programab = prompt("Você quer aprender C# ou Java?");
     let profundidadeb = prompt("Você quer seguir se especializando em back-end ou seguir se desenvolvendo para se tornar Full Stack?");
 }
-~~~
-<p>E por final coloquei o loop de tecnologias</p>
-~~~js
+```
+
+**<p>E por final coloquei o loop de tecnologias</p>**
+
+```js
 let tecnologias = prompt("Quais tecnologias você gostaria de se especializar ou de conhecer?");
     let simNao = (confirm("Deseja aprender mais alguma tecnologia?"));
     while (simNao == true){
@@ -214,5 +222,7 @@ let tecnologias = prompt("Quais tecnologias você gostaria de se especializar ou
         let simNao2 = (confirm("Deseja aprender mais alguma tecnologia?"))
         if (simNao2 == false)
             { break; }
-    }
-~~~
+}
+```
+
+<h2 align=center>Quarto dia 11/01/23<h2>
