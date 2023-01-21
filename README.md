@@ -225,4 +225,145 @@ let tecnologias = prompt("Quais tecnologias você gostaria de se especializar ou
 }
 ```
 
-<h2 align=center>Quarto dia 11/01/23<h2>
+<h2 align=center>Quarto dia 11/01/23</h2>
+
+  <p>Esse dia foi incrivelmente fácil</p>
+ 
+  **<p>O desafio foi fazer um jogo de tentar acertar o número que o computador definir com três tentativas</p>**
+  **<p>Comecei o desafio definindo a variável do número com um gerador de número aleatório entre 1 e 10</p>**
+  
+```js
+  var número = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+```
+  
+  **<p>Em seguida a variável do chute junto com as respostas se errar</p>**
+  
+```js
+  var guess = prompt("Qual número estou pensando? (de 1 a 10)");
+if (guess != número){
+    guess = prompt("Errado! Tente mais uma vez.");
+}
+if (guess != número){
+    guess = prompt("Errado! Última chance!");
+}
+if (guess != número){
+    alert("O número era " + número);
+}
+```
+  
+  **<p>Por fim a resposta se acertar o número</p>**
+  
+```js
+  else{
+    alert("Parabéns, você acertou, o número era " + número);
+}
+```
+  
+  **<p>Então o código ficou assim</p>**
+  
+```js
+  var número = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+
+var guess = prompt("Qual número estou pensando? (de 1 a 10)");
+if (guess != número){
+    guess = prompt("Errado! Tente mais uma vez.");
+}
+if (guess != número){
+    guess = prompt("Errado! Última chance!");
+}
+if (guess != número){
+    alert("O número era " + número);
+}
+else{
+    alert("Parabéns, você acertou, o número era " + número);
+}
+```
+  
+  **<p>Simples né?</p>**
+  
+<h2 align=center>Quinto dia 21/01/23</h2>
+
+  **<p>O Desafio de hoje é criar uma lista de compras separadas por tipo de produto!</p>**
+  **<p>Comecei o desafio adicionando as variáveis dos tipos de produto</p>**
+  
+```js
+  let frutas = [];
+  let laticínios = [];
+  let congelados = [];
+  let vegetais = [];
+  let bebidas = [];
+  let outros = [];
+```
+
+  **<p>Depois coloquei a pergunta se deseja adicionar mais itens a lista de compras</p>**
+  
+```js
+  var adicionarMais = confirm("Deseja adicionar mais itens a lista de compras?");
+  while (adicionarMais == true){
+  var item = prompt("Oque deseja adicionar?");
+  var tipo = prompt("Qual tipo de item ele é");
+```
+
+  **<p>Então eu coloquei os diferentes tipos de variável que o item irá entrar, dependendo do que você escolher</p>**
+  
+```js
+  if (tipo == 'frutas' || tipo == 'fruta'){
+        frutas.push(item);
+    }
+    else if (tipo == 'laticínios' || tipo == 'laticínio' || tipo == 'laticinios' || tipo == 'laticinio'){
+        laticínios.push(item);
+    }
+    else if (tipo == 'congelados' || tipo == 'congelado'){
+        congelados.push(item);
+    }
+    else if (tipo == 'vegetais' || tipo == 'vegetal'){
+        vegetais.push(item);
+    }
+    else if (tipo == 'bebidas' || tipo == 'bebida'){
+        bebidas.push(item);
+    }
+    var continuar = confirm("Deseja adicionar mais algum item?")
+        if (continuar == false)
+        { break; }
+```
+  
+  **<p>Por fim coloco a lista com as variáveis</p>**
+  
+```js
+alert ("Sua lista é: \nFrutas: " + frutas + " \nLaticínios: " + laticínios + " \nCongelados: " + congelados + " \nVegetais: " + vegetais + " \nBebidas: " + bebidas);
+```
+
+  **<p>O Código inteiro ficou desse jeito:</p>**
+  
+```js
+let frutas = [];
+let laticínios = [];
+let congelados = [];
+let vegetais = [];
+let bebidas = [];
+let outros = [];
+var adicionarMais = confirm("Deseja adicionar mais itens a lista de compras?");
+    while (adicionarMais == true){
+    var item = prompt("Oque deseja adicionar?");
+    var tipo = prompt("Qual tipo de item ele é");
+    if (tipo == 'frutas' || tipo == 'fruta'){
+        frutas.push(item);
+    }
+    else if (tipo == 'laticínios' || tipo == 'laticínio' || tipo == 'laticinios' || tipo == 'laticinio'){
+        laticínios.push(item);
+    }
+    else if (tipo == 'congelados' || tipo == 'congelado'){
+        congelados.push(item);
+    }
+    else if (tipo == 'vegetais' || tipo == 'vegetal'){
+        vegetais.push(item);
+    }
+    else if (tipo == 'bebidas' || tipo == 'bebida'){
+        bebidas.push(item);
+    }
+    var continuar = confirm("Deseja adicionar mais algum item?")
+        if (continuar == false)
+        { break; }
+}
+alert ("Sua lista é: \nFrutas: " + frutas + " \nLaticínios: " + laticínios + " \nCongelados: " + congelados + " \nVegetais: " + vegetais + " \nBebidas: " + bebidas);
+```
