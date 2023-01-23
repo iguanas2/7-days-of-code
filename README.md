@@ -371,3 +371,4 @@ var adicionarMais = confirm("Deseja adicionar mais itens a lista de compras?");
 }
 alert ("Sua lista é: \nFrutas: " + frutas + " \nLaticínios: " + laticínios + " \nCongelados: " + congelados + " \nVegetais: " + vegetais + " \nBebidas: " + bebidas);
 ```
+<h2 align=center>Sexto dia 23/01/23</h2>
