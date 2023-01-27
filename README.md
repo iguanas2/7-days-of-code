@@ -593,4 +593,4 @@ while(operacao === "soma" || operacao === "subtração" || operacao === "multipl
 <p>Mesmo eu não conseguindo fazer os desafios um dia atrás do outro por problemas pessoais, esse desafio me deu uma clareza melhor sobre as funções (não a função functions, literalmente as funções) do java script para a criação de ferramentas.
 \n Durante o curso de Iniciante em Programação eu simplesmente escrevia o que o professor pedia e funcionava, essa imersão do 7 days of code fez eu conseguir ter uma independência na criação de códigos, assim mesmo tendo dúvidas procuro na internet sobre a resolução delas, porém eu consegui fazer grande parte desse desafio sozinho, o que me deu a percepção de que eu estou cada vez mais habilitado para fazer meu códigos.<p>
   
-<p>Recomendo o curso da alura para todos meus colégas porquê está dando um grande impacto para minha formação profissional<p>
+<p>Recomendo o curso da alura para todos meus colégas porquê está dando um grande impacto para minha formação profissional. 😎😎😎<p>
