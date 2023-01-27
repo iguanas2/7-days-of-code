@@ -368,25 +368,25 @@ var adicionarMais = confirm("Deseja adicionar mais itens a lista de compras?");
 alert ("Sua lista é: \nFrutas: " + frutas + " \nLaticínios: " + laticínios + " \nCongelados: " + congelados + " \nVegetais: " + vegetais + " \nBebidas: " + bebidas);
 ```
 
-<h2 align=center>Sexto dia 23/01/23<h2>
+<h2 align=center>Sexto dia 23/01/23</h2>
 
-  **<p>O desafio do sexto dia foi complementar o quinto dia com a opção de apagar<p>**
+  **<p>O desafio do sexto dia foi complementar o quinto dia com a opção de apagar</p>**
   
-  **<p>Então eu adicionei a confirmação de se quer remover algum item da lista<p>**
+  **<p>Então eu adicionei a confirmação de se quer remover algum item da lista</p>**
   
 ```js
   var confirmarRemover = confirm("Deseja remover o último item de alguma lista?")
 ```
   
-  **<p>E se desejar remover:<p>**
+  **<p>E se desejar remover:</p>**
   
 ```js
   if (confirmarRemover == true){
     let remover = prompt("Qual categoria deseja remover?")
 ```
   
-  **<p>Ele pergunta qual categoria deseja retirar o item<p>**
-  **<p>Então optei por usar o comando ".pop()" que remove o último ítem da lista<p>**
+  **<p>Ele pergunta qual categoria deseja retirar o item</p>**
+  **<p>Então optei por usar o comando ".pop()" que remove o último ítem da lista</p>**
   
 ```js
   if (remover == 'frutas'){
@@ -411,7 +411,7 @@ alert ("Sua lista é: \nFrutas: " + frutas + " \nLaticínios: " + laticínios + 
     }
 ```
   
-  **<p>E o final do código continua o mesmo 😁<p>**
+  **<p>E o final do código continua o mesmo 😁</p>**
   
 ```js
   let frutas = [];
@@ -470,10 +470,10 @@ var adicionarMais = confirm("Deseja adicionar mais itens a lista de compras?");
 alert ("Sua lista é: \nFrutas: " + frutas + " \nLaticínios: " + laticínios + " \nCongelados: " + congelados + " \nVegetais: " + vegetais + " \nBebidas: " + bebidas);
 ```
   
-<h2 align=center>Sétimo dia 26/01/23<h2>
+<h2 align=center>Sétimo dia 26/01/23</h2>
   
-  **<p>O desafio do sétimo e último dia foi fazer uma calculadora com suas operações sendi divididas em funções<p>**
-  **<p>Comecei o desafio já colocando as variáveis e as funções para ficar mais fácil no futuro de declará-las<p>**
+  **<p>O desafio do sétimo e último dia foi fazer uma calculadora com suas operações sendo divididas em funções</p>**
+  **<p>Comecei o desafio já colocando as variáveis e as funções para ficar mais fácil no futuro de declará-las</p>**
   
 ```js
   let num1;
@@ -493,7 +493,7 @@ function soma(num1,num2){
 }
 ```
   
-  **<p>Então abri um loop perguntando qual operação fazer e coloquei o alert de operação inválida e sair da operação<p>**
+  **<p>Então abri um loop perguntando qual operação fazer e coloquei o alert de operação inválida e sair da operação</p>**
   
 ```js
   do{
@@ -508,14 +508,14 @@ function soma(num1,num2){
     }
 ```
   
-  **<p>E também abri o prompt para colocar o primeiro e segundo número<p>**
+  **<p>E também abri o prompt para colocar o primeiro e segundo número</p>**
   
 ```js
     num1 = prompt(`Primeiro número.`)
     num2 = prompt(`Segundo número.`)
 ```
   
-  **<p>Então abri o "switch" de operação, que é uma boa alternativa ao invés e colocar milhares de if else<p>**
+  **<p>Então abri o "switch" de operação, que é uma boa alternativa ao invés e colocar milhares de "if else"</p>**
   
 ```js
   switch(operacao){
@@ -534,13 +534,13 @@ function soma(num1,num2){
     }
 ```
   
-  **<p>E no final do código coloco a condição do loop<p>**
+  **<p>E no final do código coloco a condição do loop</p>**
   
 ```js
   while(operacao === "soma" || operacao === "subtração" || operacao === "multiplicação" || operacao === "divisão");
 ```
   
-  **<p>E no fim o código ficou assim<p>**
+  **<p>E no fim o código ficou assim</p>**
   
 ```js
   let num1;
@@ -588,9 +588,9 @@ do{
 while(operacao === "soma" || operacao === "subtração" || operacao === "multiplicação" || operacao === "divisão");
 ```
   
-<h2 align=center>Oque achei do 7DaysOfCode?<h2>
+<h2 align=center>Oque achei do 7DaysOfCode?</h2>
   
-<p>Mesmo eu não conseguindo fazer os desafios um dia atrás do outro por problemas pessoais, esse desafio me deu uma clareza melhor sobre as funções (não a função functions, literalmente as funções) do java script para a criação de ferramentas.
-\n Durante o curso de Iniciante em Programação eu simplesmente escrevia o que o professor pedia e funcionava, essa imersão do 7 days of code fez eu conseguir ter uma independência na criação de códigos, assim mesmo tendo dúvidas procuro na internet sobre a resolução delas, porém eu consegui fazer grande parte desse desafio sozinho, o que me deu a percepção de que eu estou cada vez mais habilitado para fazer meu códigos.<p>
+<p>Mesmo eu não conseguindo fazer os desafios um dia atrás do outro por problemas pessoais, esse desafio me deu uma clareza melhor sobre as funções (não a função functions, literalmente as funções) do java script para a criação de ferramentas.</p>
+<p>Durante o curso de Iniciante em Programação eu simplesmente escrevia o que o professor pedia e funcionava, essa imersão do 7 days of code fez eu conseguir ter uma independência na criação de códigos, assim mesmo tendo dúvidas procuro na internet sobre a resolução delas, porém eu consegui fazer grande parte desse desafio sozinho, o que me deu a percepção de que eu estou cada vez mais habilitado para fazer meu códigos.</p>
   
-<p>Recomendo o curso da alura para todos meus colégas porquê está dando um grande impacto para minha formação profissional. 😎😎😎<p>
+<p>Recomendo o curso da alura para todos meus colégas porquê está dando um grande impacto para minha formação profissional. 😎😎😎</p>
