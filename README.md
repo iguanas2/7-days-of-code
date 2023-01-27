@@ -367,3 +367,230 @@ var adicionarMais = confirm("Deseja adicionar mais itens a lista de compras?");
 }
 alert ("Sua lista é: \nFrutas: " + frutas + " \nLaticínios: " + laticínios + " \nCongelados: " + congelados + " \nVegetais: " + vegetais + " \nBebidas: " + bebidas);
 ```
+
+<h2 align=center>Sexto dia 23/01/23<h2>
+
+  **<p>O desafio do sexto dia foi complementar o quinto dia com a opção de apagar<p>**
+  
+  **<p>Então eu adicionei a confirmação de se quer remover algum item da lista<p>**
+  
+```js
+  var confirmarRemover = confirm("Deseja remover o último item de alguma lista?")
+```
+  
+  **<p>E se desejar remover:<p>**
+  
+```js
+  if (confirmarRemover == true){
+    let remover = prompt("Qual categoria deseja remover?")
+```
+  
+  **<p>Ele pergunta qual categoria deseja retirar o item<p>**
+  **<p>Então optei por usar o comando ".pop()" que remove o último ítem da lista<p>**
+  
+```js
+  if (remover == 'frutas'){
+                frutas.pop();
+            }
+            else if (remover == 'laticínios'){
+                laticínios.pop();
+            }
+            else if (remover == 'congelados'){
+                congelados.pop();
+            }
+            else if (remover == 'vegetais'){
+                vegetais.pop();
+            }
+            else if (remover == 'bebidas'){
+                bebidas.pop();
+            }
+            else if (remover == 'outros'){
+                outros.pop();
+            }
+            else alert("Não foi encontrado nenhuma categoria com esse nome :(")
+    }
+```
+  
+  **<p>E o final do código continua o mesmo 😁<p>**
+  
+```js
+  let frutas = [];
+let laticínios = [];
+let congelados = [];
+let vegetais = [];
+let bebidas = [];
+let outros = [];
+var adicionarMais = confirm("Deseja adicionar mais itens a lista de compras?");
+    while (adicionarMais == true){
+    var item = prompt("Oque deseja adicionar?");
+    var tipo = prompt("Qual tipo de item ele é");
+    if (tipo == 'frutas' || tipo == 'fruta'){
+        frutas.push(item);
+    }
+    else if (tipo == 'laticínios' || tipo == 'laticínio' || tipo == 'laticinios' || tipo == 'laticinio'){
+        laticínios.push(item);
+    }
+    else if (tipo == 'congelados' || tipo == 'congelado'){
+        congelados.push(item);
+    }
+    else if (tipo == 'vegetais' || tipo == 'vegetal'){
+        vegetais.push(item);
+    }
+    else if (tipo == 'bebidas' || tipo == 'bebida'){
+        bebidas.push(item);
+    }
+    alert ("Sua lista é: \nFrutas: " + frutas + " \nLaticínios: " + laticínios + " \nCongelados: " + congelados + " \nVegetais: " + vegetais + " \nBebidas: " + bebidas);
+    var confirmarRemover = confirm("Deseja remover o último item de alguma lista?")
+    if (confirmarRemover == true){
+        let remover = prompt("Qual categoria deseja remover?")
+            if (remover == 'frutas'){
+                frutas.pop();
+            }
+            else if (remover == 'laticínios'){
+                laticínios.pop();
+            }
+            else if (remover == 'congelados'){
+                congelados.pop();
+            }
+            else if (remover == 'vegetais'){
+                vegetais.pop();
+            }
+            else if (remover == 'bebidas'){
+                bebidas.pop();
+            }
+            else if (remover == 'outros'){
+                outros.pop();
+            }
+            else alert("Não foi encontrado nenhuma categoria com esse nome :(")
+    }
+    var continuar = confirm("Deseja adicionar mais algum item?");
+        if (continuar == false)
+        { break; }
+}
+alert ("Sua lista é: \nFrutas: " + frutas + " \nLaticínios: " + laticínios + " \nCongelados: " + congelados + " \nVegetais: " + vegetais + " \nBebidas: " + bebidas);
+```
+  
+<h2 align=center>Sétimo dia 26/01/23<h2>
+  
+  **<p>O desafio do sétimo e último dia foi fazer uma calculadora com suas operações sendi divididas em funções<p>**
+  **<p>Comecei o desafio já colocando as variáveis e as funções para ficar mais fácil no futuro de declará-las<p>**
+  
+```js
+  let num1;
+  let num2;
+  let operacao = "";
+function divisao(num1,num2){
+    return Number(num1) / Number(num2)
+}
+function multiplicacao(num1,num2){
+    return Number(num1) * Number(num2)
+}
+function subtracao(num1,num2){
+    return Number(num1) - Number(num2)
+}
+function soma(num1,num2){
+    return Number(num1) + Number(num2)
+}
+```
+  
+  **<p>Então abri um loop perguntando qual operação fazer e coloquei o alert de operação inválida e sair da operação<p>**
+  
+```js
+  do{
+    operacao = prompt(`Qual operação você irá fazer? (soma) (subtração) (multiplicação) (divisão) (nenhuma).`);
+    while(operacao != soma && operacao != subtracao && operacao != multiplicacao && operacao != divisao && operacao != nenhuma){
+        alert('Essa não é uma operação! :(')
+        operacao = prompt(`Qual operação você irá fazer? (soma) (subtração) (multiplicação) (divisão) (nenhuma).`);
+    }
+
+    if(operacao == 'sair'){
+        break
+    }
+```
+  
+  **<p>E também abri o prompt para colocar o primeiro e segundo número<p>**
+  
+```js
+    num1 = prompt(`Primeiro número.`)
+    num2 = prompt(`Segundo número.`)
+```
+  
+  **<p>Então abri o "switch" de operação, que é uma boa alternativa ao invés e colocar milhares de if else<p>**
+  
+```js
+  switch(operacao){
+        case 'divisão':
+            alert(`O resultado da ${operacao} é ${divisao(num1, num2)}`);
+            break
+        case 'multiplicação':
+            alert(`O resultado da ${operacao} é ${multiplicacao(num1, num2)}`);
+            break;
+        case 'subtração':
+            alert(`O resultado da ${operacao} é ${subtracao(num1, num2)}`);
+            break;
+        case 'soma':
+            alert(`O resultado da ${operacao} é ${soma(num1, num2)}`);
+            break;
+    }
+```
+  
+  **<p>E no final do código coloco a condição do loop<p>**
+  
+```js
+  while(operacao === "soma" || operacao === "subtração" || operacao === "multiplicação" || operacao === "divisão");
+```
+  
+  **<p>E no fim o código ficou assim<p>**
+  
+```js
+  let num1;
+let num2;
+let operacao = "";
+function divisao(num1,num2){
+    return Number(num1) / Number(num2)
+}
+function multiplicacao(num1,num2){
+    return Number(num1) * Number(num2)
+}
+function subtracao(num1,num2){
+    return Number(num1) - Number(num2)
+}
+function soma(num1,num2){
+    return Number(num1) + Number(num2)
+}
+do{
+    operacao = prompt(`Qual operação você irá fazer? (soma) (subtração) (multiplicação) (divisão) (nenhuma).`);
+    while(operacao != soma && operacao != subtracao && operacao != multiplicacao && operacao != divisao && operacao != nenhuma){
+        alert('Essa não é uma operação! :(')
+        operacao = prompt(`Qual operação você irá fazer? (soma) (subtração) (multiplicação) (divisão) (nenhuma).`);
+    }
+
+    if(operacao == 'sair'){
+        break
+    }
+    num1 = prompt(`Primeiro número.`)
+    num2 = prompt(`Segundo número.`)
+    switch(operacao){
+        case 'divisão':
+            alert(`O resultado da ${operacao} é ${divisao(num1, num2)}`);
+            break
+        case 'multiplicação':
+            alert(`O resultado da ${operacao} é ${multiplicacao(num1, num2)}`);
+            break;
+        case 'subtração':
+            alert(`O resultado da ${operacao} é ${subtracao(num1, num2)}`);
+            break;
+        case 'soma':
+            alert(`O resultado da ${operacao} é ${soma(num1, num2)}`);
+            break;
+    }
+} 
+while(operacao === "soma" || operacao === "subtração" || operacao === "multiplicação" || operacao === "divisão");
+```
+  
+<h2 align=center>Oque achei do 7DaysOfCode?<h2>
+  
+<p>Mesmo eu não conseguindo fazer os desafios um dia atrás do outro por problemas pessoais, esse desafio me deu uma clareza melhor sobre as funções (não a função functions, literalmente as funções) do java script para a criação de ferramentas.
+\n Durante o curso de Iniciante em Programação eu simplesmente escrevia o que o professor pedia e funcionava, essa imersão do 7 days of code fez eu conseguir ter uma independência na criação de códigos, assim mesmo tendo dúvidas procuro na internet sobre a resolução delas, porém eu consegui fazer grande parte desse desafio sozinho, o que me deu a percepção de que eu estou cada vez mais habilitado para fazer meu códigos.<p>
+  
+<p>Recomendo o curso da alura para todos meus colégas porquê está dando um grande impacto para minha formação profissional<p>
